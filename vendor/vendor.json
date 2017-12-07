@@ -1,7 +1,7 @@
 {
+	"comment": "",
+	"ignore": "test",
 	"heroku": {
-		"comment": "",
-		"ignore": "test",
 		"install": [
 			{
 				"checksumSHA1": "F0N5V10ap7J7/rAVRGa7QdmKqlU=",
