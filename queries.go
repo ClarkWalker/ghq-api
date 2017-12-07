@@ -68,9 +68,9 @@ func Queries() {
 		AbsentUnexcused: 1})                                 // int
 
 	db.Create(&Students{ // Dakota Pfeifer
-		// ID:              1,                                  // uint
+		// ID:              2,                                  // uint
 		Name:            "Dakota Pfeifer",             // string
-		Email:           "dpfeif@gmail.com",           // string
+		Email:           "dpfeif@outlook.com",         // string
 		Cohort:          64,                           // int
 		GithubURL:       "https://github.com/dpfeif",  // string
 		LinkedinURL:     "www.linkedin.com/in/dpfeif", // string

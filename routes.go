@@ -2,10 +2,7 @@
 package main
 
 import (
-	"encoding/json"
 	"fmt"
-	"html"
-	"log"
 	"net/http"
 
 	"github.com/gorilla/mux"
@@ -20,26 +17,53 @@ import (
 	// "github.com/go-chi/chi"
 )
 
-// main
-func main() {
-	// sainity check
-	fmt.Println("router.go has run")
-	var port = ":3000"
-	Queries()
-
-	router := mux.NewRouter().StrictSlash(true)
-	router.HandleFunc("/", index)
-	log.Fatal(http.ListenAndServe(port, router))
-
+// Route a basic form for writing routes
+type Route struct {
+	Name        string
+	Method      string
+	Pattern     string
+	HandlerFunc http.HandlerFunc
 }
 
-func index(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Hello, %q", html.EscapeString(r.URL.Path))
-	var users = Users{
-		Students{Name: "Clark Walker"},
-		Students{Name: "Lizz Robbins"},
-		Students{Name: "Cole Carol"},
-		Students{Name: "Dakota Pfeifer"},
+// Routes slices Route ...?
+type Routes []Route
+
+// NewRouter ...
+func NewRouter() *mux.Router {
+	// sanity check
+	fmt.Println("routes.go has run")
+
+	// declarations
+	var router = mux.NewRouter().StrictSlash(true)
+
+	for _, route := range routes {
+		router.
+			Methods(route.Method).
+			Path(route.Pattern).
+			Name(route.Name).
+			HandlerFunc(route.HandlerFunc)
 	}
-	json.NewEncoder(w).Encode(users)
+
+	return router
+}
+
+var routes = Routes{
+	Route{
+		"Index",
+		"GET",
+		"/",
+		Index,
+	},
+	// Route{
+	// 	"TodoIndex",
+	// 	"GET",
+	// 	"/todos",
+	// 	TodoIndex,
+	// },
+	// Route{
+	// 	"TodoShow",
+	// 	"GET",
+	// 	"/todos/{todoId}",
+	// 	TodoShow,
+	// },
 }
