@@ -10,7 +10,6 @@ import (
 // Links ...
 type Links struct {
 	gorm.Model
-	// ID              uint
 	flexboxURL string
 	sqlzooURL  string
 	mdnURL     string

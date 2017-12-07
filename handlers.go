@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/json"
+	"fmt"
 	"net/http"
 
 	"github.com/jinzhu/gorm"
@@ -9,6 +10,7 @@ import (
 
 // Index gets all records
 func Index(w http.ResponseWriter, r *http.Request) {
+	fmt.Println("index")
 	// I wanna break this out to a connection.go file
 	db, err := gorm.Open("postgres", "host=localhost dbname=go_getters_g_portal sslmode=disable")
 	// on connection err
