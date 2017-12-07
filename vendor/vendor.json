@@ -46,7 +46,7 @@
 		}
 	],
 
-	"rootPath": "github.com/ClarkWalker/ghq",
+	"rootPath": "src/github.com/ClarkWalker/ghq",
 
 	"heroku": {
 		"install": [
