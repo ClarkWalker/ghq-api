@@ -7,6 +7,7 @@ import (
 )
 
 // Logger because we need wood to build this project
+// only used in router.go for now
 func Logger(inner http.Handler, name string) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		var start = time.Now()

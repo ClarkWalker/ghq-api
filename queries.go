@@ -81,17 +81,16 @@ func Queries() {
 		AbsentExcused:   2,                            // int
 		AbsentUnexcused: 1})                           // int
 
-	// // Read
-	// db.Find(&student)
-	// // var getAll = db.Find(&student)
-	// // fmt.Println(getAll)
+	// Read
+	db.Find(&student)
+	var getAll = db.Find(&student)
+	fmt.Println(getAll)
 
 	// // Update
 	// db.Model(&student).Update("Role", "vary snarky student")
 
 	// // Delete
 	// db.Delete(&student)
-	GetAllStudents(db)
 } // end main
 
 // GetAllStudents ...

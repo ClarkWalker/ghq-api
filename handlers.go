@@ -3,16 +3,22 @@ package main
 import (
 	"encoding/json"
 	"net/http"
+
+	"github.com/jinzhu/gorm"
 )
 
 // Index gets all records
 func Index(w http.ResponseWriter, r *http.Request) {
-	var users = Users{
-		Students{Name: "Clark Walker"},
-		Students{Name: "Lizz Robbins"},
-		Students{Name: "Cole Carol"},
-		Students{Name: "Dakota Pfeifer"},
+	// I wanna break this out to a connection.go file
+	db, err := gorm.Open("postgres", "host=localhost dbname=go_getters_g_portal sslmode=disable")
+	// on connection err
+	if err != nil {
+		panic("failed to connect database")
 	}
+	defer db.Close()
 
-	json.NewEncoder(w).Encode(users)
+	// this is a working get to / it returns all records
+	var students []Students
+	var getAll = db.Find(&students)
+	json.NewEncoder(w).Encode(getAll)
 }
