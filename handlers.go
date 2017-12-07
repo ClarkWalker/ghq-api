@@ -18,31 +18,31 @@ func Index(w http.ResponseWriter, r *http.Request) {
 	defer db.Close()
 
 	// this is a working get to / it returns all records
-	var students []Students
-	var getAll = db.Find(&students)
+	var link []Links
+	var getAll = db.Find(&link)
 	json.NewEncoder(w).Encode(getAll)
 }
 
-// Reset runs migrations
-func Reset(w http.ResponseWriter, r *http.Request) {
-	// I wanna break this out to a connection.go file
-	db, err := gorm.Open("postgres", "host=localhost dbname=go_getters_g_portal sslmode=disable")
-	// on connection err
-	if err != nil {
-		panic("failed to connect database")
-	}
-	defer db.Close()
-
-	Migrations()
-}
+// // Reset runs migrations
+// func Reset(w http.ResponseWriter, r *http.Request) {
+// 	// I wanna break this out to a connection.go file
+// 	db, err := gorm.Open("postgres", "host=localhost dbname=go_getters_g_portal sslmode=disable")
+// 	// on connection err
+// 	if err != nil {
+// 		panic("failed to connect database")
+// 	}
+// 	defer db.Close()
+//
+// 	Migrations()
+// }
 
 // // Read
-// db.Find(&student)
-// var getAll = db.Find(&student)
+// db.Find(&link)
+// var getAll = db.Find(&link)
 // fmt.Println(getAll)
 
 // // Update
-// db.Model(&student).Update("Role", "vary snarky student")
+// db.Model(&link).Update("Role", "vary snarky link")
 
 // // Delete
-// db.Delete(&student)
+// db.Delete(&link)

@@ -30,10 +30,10 @@ var routes = Routes{
 		"/index",
 		Index,
 	},
-	Route{
-		"Reset",
-		"GET",
-		"/reset",
-		Index,
-	},
+	// Route{
+	// 	"Reset",
+	// 	"GET",
+	// 	"/reset",
+	// 	Index,
+	// },
 }
