@@ -41,7 +41,7 @@ func Migrations() {
 		flexboxURL: "http://flexboxfroggy.com/",            // string
 		sqlzooURL:  "http://sqlzoo.net/",                   // string
 		mdnURL:     "https://developer.mozilla.org/en-US/", // string
-		knexjsURL:  "www.google.com",                       // string
-		expressURL: "www.google.com"})                      // string
+		knexjsURL:  "http://knexjs.org/",                   // string
+		expressURL: "https://expressjs.com/"})              // string
 
 } // end main

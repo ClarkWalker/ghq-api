@@ -12,10 +12,12 @@ func main() {
 	fmt.Println("main.go has run")
 
 	// declarations
+	// var port = os.Getenv("PORT")
 	var port = os.Getenv("PORT")
 	if port == "" {
-		port = "3000"
+		port = ":3000"
 	}
+	fmt.Println("Port =", port)
 
 	var router = NewRouter()
 
