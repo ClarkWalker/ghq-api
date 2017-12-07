@@ -46,9 +46,11 @@
 		}
 	],
 
-	"rootPath": "src/github.com/ClarkWalker/ghq",
+	"rootPath": "github.com/ClarkWalker/ghq",
 
 	"heroku": {
+		"sync": "true",
+		"goVersion": "go1.9.2",
 		"install": [
 			{
 				"checksumSHA1": "F0N5V10ap7J7/rAVRGa7QdmKqlU=",
@@ -92,7 +94,6 @@
 				"revision": "83612a56d3dd153a94a629cd64925371c9adad78",
 				"revisionTime": "2017-11-26T05:04:59Z"
 			}
-		],
-		"goVersion": "go1.9.2"
-	},
+		]
+	}
 }
