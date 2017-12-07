@@ -2,10 +2,7 @@
 package main
 
 import (
-	"fmt"
 	"net/http"
-
-	"github.com/gorilla/mux"
 )
 
 // Route a basic form for writing routes
@@ -27,23 +24,4 @@ var routes = Routes{
 		"/",
 		Index,
 	},
-}
-
-// NewRouter ...
-func NewRouter() *mux.Router {
-	// sanity check
-	fmt.Println("routes.go has run")
-
-	// declarations
-	var router = mux.NewRouter().StrictSlash(true)
-
-	for _, route := range routes {
-		router.
-			Methods(route.Method).
-			Path(route.Pattern).
-			Name(route.Name).
-			HandlerFunc(route.HandlerFunc)
-	}
-
-	return router
 }
