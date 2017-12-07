@@ -3,6 +3,76 @@
 	"ignore": "test",
 	"package": [
 		{
+			"checksumSHA1": "xK8FeIZDwxas8+8ItMZSmlg6Vbs=",
+			"path": "bufio",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "i2pejM3pgH1rO+GXEoLhzrkkbmo=",
+			"path": "bytes",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "sfZ7aFQoDWuGj0jZt0aFiNLNYsI=",
+			"path": "context",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "ycZR4UYE9ysbppjwqt0UQ/80iyg=",
+			"path": "crypto/md5",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "+ApPJCPgIHw+2487WOwvSdfR1QU=",
+			"path": "crypto/sha1",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "XYr+KPsjZrd3y81tFaNi1q+8UZM=",
+			"path": "crypto/tls",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "zMHqvn+15fqtBzBveMeywctt3BA=",
+			"path": "crypto/x509",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "SP930krJVIAm1WBw1mdT+qZb0n8=",
+			"path": "database/sql",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "BOtrRVNaDuCOUbB6Sj43znABV7E=",
+			"path": "database/sql/driver",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "RJs/5tXxzJybKP06zIQ6lkLCfoc=",
+			"path": "encoding/binary",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "DmtaobQ4Wj4kx9RHFy6M+8rRNXg=",
+			"path": "encoding/hex",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "CU/4pLQSyejn8nulcEEw3o/f5qc=",
+			"path": "encoding/json",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "/IgtMOBRqTxEAfVs7ATBXQMVRf4=",
+			"path": "errors",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "xP1PzHaYbP6yJLipAivO1nCtBjA=",
+			"path": "fmt",
+			"revision": ""
+		},
+		{
 			"checksumSHA1": "F0N5V10ap7J7/rAVRGa7QdmKqlU=",
 			"path": "github.com/gorilla/mux",
 			"revision": "7904d2e42e7ebbdb4a6eb3e57eb201b11df25c57",
@@ -43,6 +113,126 @@
 			"path": "github.com/lib/pq/oid",
 			"revision": "83612a56d3dd153a94a629cd64925371c9adad78",
 			"revisionTime": "2017-11-26T05:04:59Z"
+		},
+		{
+			"checksumSHA1": "eRoPtkrYQjFGl+GnwBmJb3hkhMw=",
+			"path": "go/ast",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "GBf996WSV3nkLqPjDSOgZCpcjbM=",
+			"path": "io",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "oHZUSIYA0ca9MNDFN4NfweNnDvw=",
+			"path": "io/ioutil",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "YKstMu107tYOKyv2tTwyADSyCLU=",
+			"path": "log",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "iooFYfNMKRuhHmH8+gap+37jBbU=",
+			"path": "math",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "uWKIJDUUYI7/cimIzPwSqt6GMnE=",
+			"path": "net",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "MzvmZZOO9/0iIQn1jrG4xChEK5s=",
+			"path": "net/http",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "7Zy2lAaRFXyJavJX/uW2wNMtbYM=",
+			"path": "net/url",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "m2h3ZK5Xs3IUlVlzZJQK7m3zrJo=",
+			"path": "os",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "q+IU1GoGGArmA2NmoRhhW0+/rUc=",
+			"path": "os/user",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "yGTl+Us0m0EsxTCsE+rwXVvxDl0=",
+			"path": "path",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "NMPUMBAm/MexitZp1RakIrauRiM=",
+			"path": "path/filepath",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "fuX5SU4mGIqZXwe0NxtXd747tnA=",
+			"path": "reflect",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "l55R4JoOpu9qdMnY8bNCT89oJBw=",
+			"path": "regexp",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "oeO3S3UnhrzPm5EX2JI1Q0ohoxA=",
+			"path": "runtime",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "XZ4Xw33wAbPxVj20ZqVCl3kEwwo=",
+			"path": "sort",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "BdD6NfcKarAh6TWGBFFG1Sgj2GA=",
+			"path": "strconv",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "EzzIm0rtLqZpGCok8gvvw2Sn+LQ=",
+			"path": "strings",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "XfhJ+d8Z4RKTgnevVhKxgDf1HRk=",
+			"path": "sync",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "WzKD6wc6HjzWcWDqdaP6Mjo1mJk=",
+			"path": "sync/atomic",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "NZfL8/aSgDPTUlrQ4wZpP5XBBWA=",
+			"path": "syscall",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "TYErwIHvBDxB1Ps9tzq4Fi7o3c0=",
+			"path": "time",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "uEmG88piMk45If0vDl6xMkCGdr8=",
+			"path": "unicode",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "Gv8TqXeCicz9pwp0U4tmwY4DECw=",
+			"path": "unicode/utf8",
+			"revision": ""
 		}
 	],
 	"rootPath": "github.com/ClarkWalker/ghq"
