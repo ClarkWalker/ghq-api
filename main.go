@@ -11,8 +11,6 @@ func main() {
 	// sanity check
 	fmt.Println("main.go has run")
 	Migrations()
-
-	// declarations
 	// var port = os.Getenv("PORT")
 	var port = os.Getenv("PORT")
 	if port == "" {
