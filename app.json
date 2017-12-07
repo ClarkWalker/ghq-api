@@ -1,0 +1,12 @@
+{
+  "name": "Start on Heroku: Go",
+  "description": "Go Getters api",
+  "keywords": [
+    "getting-started",
+    "go",
+    "sample",
+    "example"
+  ],
+  "website": "https://git.heroku.com/cw-g64-api-ghq.git",
+  "repository": "https://git.heroku.com/cw-g64-api-ghq.git"
+}
