@@ -24,4 +24,16 @@ var routes = Routes{
 		"/",
 		Index,
 	},
+	Route{
+		"Index",
+		"GET",
+		"/index",
+		Index,
+	},
+	Route{
+		"Reset",
+		"GET",
+		"/reset",
+		Index,
+	},
 }
