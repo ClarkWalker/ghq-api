@@ -8,13 +8,15 @@ import (
 )
 
 // Links ...
+// The Names Need To Start With An UpperCase Letter
+// PascalCase PascalCase PascalCase PascalCase PascalCase PascalCase
 type Links struct {
 	gorm.Model
-	flexboxURL string
-	sqlzooURL  string
-	mdnURL     string
-	knexjsURL  string
-	expressURL string
+	FlexboxURL string
+	SqlzooURL  string
+	MdnURL     string
+	KnexjsURL  string
+	ExpressURL string
 }
 
 // Migrations ...
@@ -34,13 +36,15 @@ func Migrations() {
 	db.DropTable(&Links{})
 	// Migrate taht ol schema
 	db.AutoMigrate(&Links{})
-	// these are seeds ;) // Create
+	// these are seeds ;)
+	// The Names Need To Start With An UpperCase Letter
+	// PascalCase PascalCase PascalCase PascalCase PascalCase PascalCase
 	db.Create(&Links{ // Clark Walker
 		// ID:              1,                                  // uint
-		flexboxURL: "http://flexboxfroggy.com/",            // string
-		sqlzooURL:  "http://sqlzoo.net/",                   // string
-		mdnURL:     "https://developer.mozilla.org/en-US/", // string
-		knexjsURL:  "http://knexjs.org/",                   // string
-		expressURL: "https://expressjs.com/"})              // string
+		FlexboxURL: "http://flexboxfroggy.com/",            // string
+		SqlzooURL:  "http://sqlzoo.net/",                   // string
+		MdnURL:     "https://developer.mozilla.org/en-US/", // string
+		KnexjsURL:  "http://knexjs.org/",                   // string
+		ExpressURL: "https://expressjs.com/"})              // string
 
 } // end main
